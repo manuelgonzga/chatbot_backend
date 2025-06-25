@@ -66,7 +66,7 @@ def chat():
     response = get_response(tag, intents)
     return jsonify({"response": response})
 
-## INTENTO DE MANEJAR EL ERROR ## 
+## Handler global de errores para debugging en Render ## 
 
 import logging
 import traceback
@@ -77,7 +77,7 @@ def handle_exception(e):
     logging.error(traceback.format_exc())
     return jsonify({"error": "Internal Server Error"}), 500
 
-##################################
+########################################################
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
