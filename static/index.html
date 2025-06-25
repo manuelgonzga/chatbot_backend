@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot - ManuelBot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    #chat-box {
+      background: white;
+      width: 400px;
+      height: 500px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .msg {
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 10px;
+      max-width: 80%;
+      word-wrap: break-word;
+    }
+
+    .user {
+      background-color: #d1e7dd;
+      align-self: flex-end;
+      text-align: right;
+    }
+
+    .bot {
+      background-color: #f8d7da;
+      align-self: flex-start;
+      text-align: left;
+    }
+
+    #controls {
+      display: flex;
+      width: 400px;
+    }
+
+    #input {
+      flex: 1;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: #0d6efd;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>ManuelBot</h2>
+  <div id="chat-box"></div>
+  <div id="controls">
+    <input id="input" type="text" placeholder="Escribí tu mensaje..." />
+    <button onclick="enviar()">Enviar</button>
+  </div>
+
+  <script>
+    async function enviar() {
+      const input = document.getElementById("input");
+      const mensaje = input.value.trim();
+      if (mensaje === "") return;
+
+      agregarMensaje("user", mensaje);
+      input.value = "";
+
+      const res = await fetch("http://127.0.0.1:5000/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: mensaje })
+      });
+
+      const data = await res.json();
+      agregarMensaje("bot", data.response);
+    }
+
+    function agregarMensaje(tipo, texto) {
+      const chatBox = document.getElementById("chat-box");
+      const msg = document.createElement("div");
+      msg.classList.add("msg", tipo);
+      msg.innerText = texto;
+      chatBox.appendChild(msg);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+  </script>
+</body>
+</html>

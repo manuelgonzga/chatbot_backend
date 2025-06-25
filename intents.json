@@ -1,0 +1,233 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hello", "Hi", "Good morning", "Hey", "Good afternoon", "Hi there", "Greetings"],
+      "responses": ["Hello! How can I help you today?", "Hi there, feel free to ask about my background!", "Good day! Let me know what you'd like to know."]
+    },
+    {
+      "tag": "farewell",
+      "patterns": ["Goodbye", "Bye", "See you", "Talk to you later", "Thanks, goodbye", "Take care"],
+      "responses": ["Goodbye! Feel free to reach out anytime.", "See you soon. Thanks for your interest!", "Take care and best regards."]
+    },
+    {
+      "tag": "small_talk",
+      "patterns": ["How are you?", "What's up?", "How's it going?", "How do you feel?"],
+      "responses": ["I'm doing great and ready to share my professional experience!", "Feeling motivated and open to new challenges."]
+    },
+    {
+      "tag": "objective",
+      "patterns": [
+        "What is your career objective?",
+        "What are your professional goals?",
+        "What are you looking for in a job?",
+        "Why are you applying?",
+        "What do you want to achieve?"
+      ],
+      "responses": [
+        "I’m looking for a job in the technology sector to gain experience and apply the knowledge I’ve acquired.",
+        "My goal is to grow professionally, take on new challenges, and keep learning.",
+        "I want to contribute to problem-solving and improve technical processes in a professional setting."
+      ]
+    },
+    {
+      "tag": "contact_info",
+      "patterns": ["What's your email?", "How can I contact you?", "Do you have a portfolio?", "Phone number?", "Can I see your website?"],
+      "responses": [
+        "You can email me at manuelgonzga.2016@gmail.com.",
+        "My portfolio is available at: https://papaya-entremet-22dd57.netlify.app.",
+        "You can reach me by phone at +34 656 66 86 16."
+      ]
+    },
+    {
+      "tag": "education_current",
+      "patterns": [
+        "What are you studying?", "Are you in university?", "What degree do you have?", "Tell me about your degree", "Where do you study?"
+      ],
+      "responses": [
+        "I’m currently pursuing a Bachelor's Degree in Computer Engineering (2021 - Present).",
+        "I study Computer Engineering where I’ve learned about advanced systems and programming.",
+        "I’m specializing in concurrent systems, CPU architecture, and web development."
+      ]
+    },
+    {
+      "tag": "education_past",
+      "patterns": [
+        "What did you study before university?", "Do you have technical education?", "Tell me about your technician degree"
+      ],
+      "responses": [
+        "I studied Higher Technician in Network Computer Systems Administration (2019–2021) and now I am ",
+        "I focused on network services, router configuration, databases, and system administration."
+      ]
+    },
+    {
+      "tag": "experience_argentina",
+      "patterns": [
+        "Tell me about your international experience", "Did you study abroad?", "What did you do in Argentina?"
+      ],
+      "responses": [
+        "In 2025 I joined an International Mobility Program at Universidad de Belgrano, Argentina.",
+        "I worked with innovative tools and collaborated on international projects in diverse teams."
+      ]
+    },
+    {
+      "tag": "experience_servinform",
+      "patterns": [
+        "What did you do at Servinform?", "Tell me about your internship", "Any professional experience?"
+      ],
+      "responses": [
+        "I interned at Servinform in 2021, helping manage servers and writing automation scripts.",
+        "I worked on debugging, testing code, and improving system performance and security."
+      ]
+    },
+    {
+      "tag": "cybersecurity_course",
+      "patterns": [
+        "What cybersecurity knowledge do you have?", "Have you taken any cybersecurity courses?"
+      ],
+      "responses": [
+        "I completed the Google Cybersecurity Certificate in 2025.",
+        "I learned to detect threats, use SIEM/IDS tools, and apply Python, Linux, and SQL in security tasks."
+      ]
+    },
+    {
+      "tag": "skills_programming_languages",
+      "patterns": [
+        "What programming languages do you know?", "Do you know Python?", "Can you code in C++?", "What languages have you used?"
+      ],
+      "responses": [
+        "I’m proficient in C, C++, Java, and Python.",
+        "I’ve worked on both academic and personal projects using these languages."
+      ]
+    },
+    {
+      "tag": "skills_web",
+      "patterns": [
+        "Do you know web development?", "Can you build websites?", "Frontend or backend?", "Do you know HTML and CSS?"
+      ],
+      "responses": [
+        "Yes, I’ve developed full-stack web applications handling both frontend and backend.",
+        "I use modern web technologies and frameworks to build responsive web solutions."
+      ]
+    },
+    {
+      "tag": "skills_concurrent_systems",
+      "patterns": [
+        "Do you know about parallel systems?", "Have you studied concurrency?", "Do you understand multiprocessors?"
+      ],
+      "responses": [
+        "Yes, I’ve studied parallel and concurrent systems in depth.",
+        "I understand CPU design, memory architecture, cache, pipelines, and multiprocessor systems."
+      ]
+    },
+    {
+      "tag": "skills_networks",
+      "patterns": [
+        "Do you have experience with networks?", "What do you know about routers?", "Can you manage LAN/WAN?"
+      ],
+      "responses": [
+        "Yes, I’ve configured routers and switches, and managed LAN and WAN networks.",
+        "Network administration was a key part of my technical education."
+      ]
+    },
+    {
+      "tag": "skills_databases",
+      "patterns": [
+        "Do you know about databases?", "Can you manage SQL?", "What database experience do you have?"
+      ],
+      "responses": [
+        "Yes, I can install, configure, and manage SQL-based databases.",
+        "I’ve also used SQL in security and automation tasks."
+      ]
+    },
+    {
+      "tag": "skills_os",
+      "patterns": [
+        "What operating systems do you use?", "Can you manage Linux?", "Do you know how to configure OS?"
+      ],
+      "responses": [
+        "I’ve managed both Windows and Linux systems.",
+        "I can install, configure, and troubleshoot operating systems in various environments."
+      ]
+    },
+    {
+      "tag": "softskills_communication",
+      "patterns": [
+        "Do you work well in teams?", "Are you a good communicator?", "Have you worked in diverse groups?"
+      ],
+      "responses": [
+        "Yes, I’ve collaborated in multicultural teams and improved my communication skills.",
+        "Effective teamwork has been essential in both academic and international projects."
+      ]
+    },
+    {
+      "tag": "softskills_problemsolving",
+      "patterns": [
+        "Are you good at problem solving?", "How do you approach technical issues?", "Can you fix bugs?"
+      ],
+      "responses": [
+        "I enjoy problem-solving and debugging code.",
+        "I often use scripting to automate tasks and improve performance."
+      ]
+    },
+    {
+      "tag": "softskills_adaptability",
+      "patterns": [
+        "Do you adapt well to new environments?", "Have you worked in new situations?", "Can you handle change?"
+      ],
+      "responses": [
+        "Yes, I adapt quickly, especially during my international experience.",
+        "I adjust easily to new technologies and team dynamics."
+      ]
+    },
+    {
+      "tag": "languages",
+      "patterns": [
+        "Do you speak English?", "What languages do you know?", "Are you bilingual?"
+      ],
+      "responses": [
+        "I’m a native Spanish speaker and have an advanced-intermediate level of English.",
+        "I can communicate effectively in both languages, especially in technical contexts."
+      ]
+    },
+    {
+      "tag": "portfolio",
+      "patterns": [
+        "Can I see your work?", "Do you have a portfolio?", "Where can I find your projects?"
+      ],
+      "responses": [
+        "This portfolio includes my projects, education, and contact details."
+      ]
+    },
+    {
+      "tag": "available_for_work",
+      "patterns": [
+        "Are you available for work?", "Are you currently job hunting?", "Can you start soon?"
+      ],
+      "responses": [
+        "Yes, I’m actively seeking opportunities to grow and contribute.",
+        "I’m ready to take on new challenges and join a team where I can learn and add value."
+      ]
+    },
+    {
+      "tag": "relocation",
+      "patterns": [
+        "Are you willing to relocate?", "Can you work abroad?", "Would you move for work?"
+      ],
+      "responses": [
+        "Yes, I’m open to relocation and international opportunities.",
+        "My previous mobility program in Argentina shows my flexibility."
+      ]
+    },
+    {
+      "tag": "why_hire",
+      "patterns": [
+        "Why should we hire you?", "What makes you different?", "What can you bring to our team?"
+      ],
+      "responses": [
+        "I bring technical skills, a strong learning mindset, and the motivation to grow.",
+        "My background combines software, networks, and hands-on experience in real-world settings."
+      ]
+    }
+  ]
+}

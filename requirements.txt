@@ -1,0 +1,7 @@
+flask
+flask-cors
+keras
+tensorflow
+nltk
+numpy
+pickle5
