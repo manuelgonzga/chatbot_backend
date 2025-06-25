@@ -13,7 +13,8 @@ app = Flask(__name__, static_folder='static')
 CORS(app)  # Habilita CORS
 
 lemmatizer = WordNetLemmatizer()
-nltk.download('punkt')
+nltk.data.path.append("./nltk_data")
+
 
 # Cargar archivos del chatbot
 with open('intents.json', encoding='utf-8') as file:
