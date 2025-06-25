@@ -66,6 +66,19 @@ def chat():
     response = get_response(tag, intents)
     return jsonify({"response": response})
 
+## INTENTO DE MANEJAR EL ERROR ## 
+
+import logging
+import traceback
+
+@app.errorhandler(Exception)
+def handle_exception(e):
+    logging.error(f"Exception: {e}")
+    logging.error(traceback.format_exc())
+    return jsonify({"error": "Internal Server Error"}), 500
+
+##################################
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=False, host="0.0.0.0", port=port)
